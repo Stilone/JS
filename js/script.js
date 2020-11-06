@@ -1,26 +1,50 @@
-//Tf = (9 / 5) * Tc + 32 
-//где Tf – температура по Фаренгейту 
-//Tc – температура по Цельсию
+// Задание 1
+// let counter = 0;
 
-//1.ЗАДАНИЕ
-let temperature = prompt('Задать температуру в градусах по Цельсию');
-    let Tf = (9 / 5) * temperature + 32;
-alert(Tf);
+// const isPrime = (num) => {
+//     for (let i = 2; i < num; i += 1) {
+//         if (num % i === 0) return false;
+//     }
+//     if (num >= 1) return true;
+// }
 
-//2.ЗАДАНИЕ
-//a) Объявить две переменные: admin и name. 
-//Записать в name строку «Василий»;
+// while (counter <= 100) {
+//     if (isPrime(counter)) {
+//         console.log(counter);
+//     }
+//     counter += 1;
+// }
 
-//b) Скопировать значение из name в admin. 
-//Вывести admin (должно вывести «Василий»).
 
-let admin = 'Саша';
-let name = 'Василий';
 
-admin = name;
-alert(admin);
 
-//3.ЗАДАНИЕ
-//Чему будет равно JS-выражение 1000 + "108"?
-alert('Если в выражении при плюсе есть хоть одна строка, то он соеденит их вместе, а если другие вычисления */-% он строку переведет в число');
-alert(1000 + "108");
+// Задание 2
+// const cart = [];
+
+// for (let i = 0; i <= Math.random() * 100; i += 1) {
+//     const cartItem = {price: Math.ceil(Math.random() * 1000), name: `Cart Item #${Math.ceil(i)}`}
+//     cart.push(cartItem);
+// }
+
+// console.log(cart);
+
+// let cartPrice = 0;
+// for (let i = 0; i < cart.length; i+= 1) {
+//     const item = cart[i];
+//     cartPrice += item.price;
+// }
+
+// console.log(cartPrice);
+
+
+// Задание 3
+// for (let i = 0; i < 10; console.log(i++)) {}
+
+// Задание 4
+for (let i = 1; i<= 20; i+= 1) {
+    let str = '';
+    for (let j = 0; j < i; j += 1) {
+        str += 'x'
+    }
+    console.log(str);
+}
